@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
         url(../images/casas.png) no-repeat center center/cover;
 }
 
@@ -43,7 +43,7 @@ body {
 
 .nav a:hover,
 .nav .active {
-    color: #ffd700;
+    color: #d11919;
 }
 
 .sobre {
@@ -58,7 +58,7 @@ body {
     background: rgba(0, 0, 0, 0.85);
     padding: 40px;
     max-width: 800px;
-    border-left: 5px solid #ffd700;
+    border-left: 5px solid #d11919;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
     border-radius: 8px;
     text-align: left;
@@ -76,8 +76,8 @@ body {
 .btn {
     padding: 12px 24px;
     background: transparent;
-    border: 2px solid #ffd700;
-    color: #ffd700;
+    border: 2px solid #d11919;
+    color: #d11919;
     font-weight: bold;
     font-size: 1em;
     border-radius: 6px;
@@ -86,13 +86,13 @@ body {
 }
 
 .btn:hover {
-    background: #ffd700;
-    color: #000;
+    background: #af5050;
+    color: #fce4e4;
 }
 
 .btn.active {
-    background: #ffd700;
-    color: #000;
+    background: hsla(0, 100%, 50%, 0.274);
+    color: #FFF;
 }
 
 .conteudo {
@@ -100,7 +100,7 @@ body {
 }
 
 .conteudo h1 {
-    color: #ffd700;
+    color: #d11919;
     font-size: 2em;
     margin-bottom: 15px;
 }
