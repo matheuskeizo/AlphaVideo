@@ -200,12 +200,12 @@ nav a:hover {
 }
 
 .video-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 40px auto;
   aspect-ratio: 16 / 9;
   position: relative;
   border-radius: 12px;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
@@ -216,7 +216,8 @@ nav a:hover {
 }
 
 .container-body h2{
-    margin-left: 20px;
+    padding-top: 40px;
+    padding-left: 50px;
 }
 .video-container h2 {
   margin-bottom: 30px;
@@ -225,8 +226,7 @@ nav a:hover {
 
 .video-ratio {
   max-width: 800px;
-
-  margin: 0 auto;
+  margin: 50px 100px 100px 100px;
   position: relative;
   padding-bottom: 56.25%; /* proporção 16:9 */
   height: 0;
