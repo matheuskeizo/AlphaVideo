@@ -31,15 +31,22 @@ body {
 
 
 .header {
-     padding: 0;
-    position: fixed;
-     width: 100%;
-    
-    z-index: 1000;
-    height: 100px;
-    display: flex;
-    background-color: rgba(148, 148, 148, 0);
-    overflow: hidden;
+  padding: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 100px;
+  display: flex;
+  background-color: #000000;
+  overflow: visible; /* não corta logo */
+}
+
+.hero {
+  height: calc(100vh - 280px); /* ou use margin-top: 280px */
+  background: url('../images/construção.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .container {
@@ -74,14 +81,6 @@ nav a:hover {
   transition:.9s;
 }
 
-.hero {
-  height: 100vh;
-  background: url('../images/construção.png') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
@@ -266,123 +265,44 @@ nav a:hover {
 @media (max-width: 480px) {
 
   .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    height: auto;
-    background-color: rgba(0, 61, 77, 0.95);
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid #c4c4c4;
-  }
+  padding: 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  overflow: visible;
+  position: relative;
+}
 
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    max-width: 200px;
+nav a {
+  color: var(--light); /* antes era branco */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
 
-  }
+}
 
-  .logo img {
-    height: 80px;
-    margin-bottom: 10px;
-  }
+.hero {
+  /* margin-top: 100px; */
+  height: calc(100vh - 100px);
+  background: url('../images/construção.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    margin-top: 10px;
-  }
+.header-funcao{
+  margin-right: 30px;
+}
 
-  nav a {
-    font-size: 16px;
-    padding: 8px;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 5px;
-  }
+.logo img {
+  height: 280px !important;
+  width: auto;
+  object-fit: contain;
+}
 
-  /* HERO */
-  .hero {
-    padding-top: 140px; /* compensação do header fixo */
-    padding-bottom: 40px;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-  }
-
-  .hero-text h1 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-  }
-
-  .hero-text p {
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-  }
-
-  .btn {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-  }
-
-  /* SERVICES */
-  .services {
-    padding: 40px 15px;
-  }
-
-  .grid {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .card {
-    width: 100%;
-    padding: 20px;
-    border-radius: 8px;
-  }
-
-  .card h2 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-  }
-
-  .card li {
-    font-size: 0.95rem;
-    margin-bottom: 8px;
-  }
-
-  .card p {
-    font-size: 0.9rem;
-  }
-
-  /* VIDEO */
-  .video-container {
-    padding: 40px 15px;
-  }
-
-  .video-container h2 {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-  }
-
-  .video-ratio {
-    max-width: 100%;
-  }
-
-  /* FOOTER */
-  .footer {
-    padding: 20px 15px;
-    font-size: 0.85rem;
-    text-align: center;
-  }
 }
 
 
