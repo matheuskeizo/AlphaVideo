@@ -354,7 +354,7 @@ body {
   .card-item {
     width: 90%;
     margin: 0 auto;
-    position: relative;
+  
   }
 
   .card-item img {
@@ -382,6 +382,7 @@ body {
   
   .img-fluid{
     height: 100%;
+    position: relative;
   }
 
   .hero h2 {
