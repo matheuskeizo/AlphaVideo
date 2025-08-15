@@ -189,6 +189,8 @@ nav a:hover {
   text-align: center;
   padding: 30px 0;
   z-index: 999;
+  position: relative;
+    clear: both;
 }
 
 .video-container {
