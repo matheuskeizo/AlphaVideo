@@ -354,6 +354,7 @@ body {
   .card-item {
     width: 90%;
     margin: 0 auto;
+    position: relative;
   }
 
   .card-item img {
@@ -376,6 +377,7 @@ body {
 
   .hero{
     margin: 0;
+    margin-bottom: 20px;
   }
   
   .img-fluid{
@@ -407,12 +409,15 @@ body {
   .cards h2 {
     margin: 0;
     padding: 100px;
+    
   }
 
  
   .cards-list {
     padding: 20px;
   }
+
+  
 }
 
 
