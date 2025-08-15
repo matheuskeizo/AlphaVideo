@@ -10,38 +10,35 @@ html {
   scroll-behavior: smooth;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-
-.logo img {
-    height: 280px;
-    max-height: 100%;
-    object-fit: contain;
-}
-
 body {
   margin: 0;
   font-family: var(--font);
   background-color: var(--light);
   color: #333;
+  
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 280px;
+  object-fit: contain;
+}
 
 .header {
-  padding: 0;
   width: 100%;
-  z-index: 1000;
   height: 100px;
   display: flex;
   background-color: #000000;
-  overflow: visible; /* não corta logo */
+  z-index: 1000;
+  overflow: visible;
 }
 
 .hero {
-  height: calc(100vh - 280px); /* ou use margin-top: 280px */
+  height: calc(100vh - 280px);
   background: url('../images/construção.png') no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -53,34 +50,30 @@ body {
   width: 100%;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.container-header{
+.container-header {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-
 nav a {
-    
   margin-left: 30px;
+  margin-right: 40px;
   color: var(--light);
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
-  margin-right: 40px;
 }
 
 nav a:hover {
   color: var(--primary);
-  transition:.9s;
+  transition: 0.9s;
 }
-
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
@@ -95,7 +88,7 @@ nav a:hover {
   text-align: center;
   color: var(--light);
   max-width: 900px;
-  padding: 40px;
+  /* padding: 40px; */
 }
 
 .hero-text h1 {
@@ -140,12 +133,12 @@ nav a:hover {
   background-color: var(--light);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: scale 0.5s;
 }
 
 .card:hover {
   scale: 1.1;
-  transition: scale .5s;
 }
 
 .card h2 {
@@ -203,8 +196,7 @@ nav a:hover {
   aspect-ratio: 16 / 9;
   position: relative;
   border-radius: 12px;
-  /* overflow: hidden; */
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .video-container iframe {
@@ -213,10 +205,11 @@ nav a:hover {
   border: none;
 }
 
-.container-body h2{
-    padding-top: 40px;
-    padding-left: 50px;
+.container-body h2 {
+  padding-top: 40px;
+  padding-left: 50px;
 }
+
 .video-container h2 {
   margin-bottom: 30px;
   font-size: 2rem;
@@ -226,7 +219,7 @@ nav a:hover {
   max-width: 800px;
   margin: 50px 100px 100px 100px;
   position: relative;
-  padding-bottom: 56.25%; /* proporção 16:9 */
+  padding-bottom: 56.25%;
   height: 0;
 }
 
@@ -261,50 +254,73 @@ nav a:hover {
   }
 }
 
-
 @media (max-width: 480px) {
-
   .header {
-  padding: 0;
-  width: 100%;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  background-color: #000000;
-  overflow: visible;
-  position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    overflow: visible;
+    position: relative;
+  }
+
+  .header-funcao{
+    padding-right: 20px;
+  }
+
+  nav a {
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .hero {
+    height: calc(100vh - 100px);
+    background: url('../images/construção.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .logo img {
+    height: 280px !important;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .video-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+  }
+
+  .video-ratio {
+    max-width: 100%;
+    margin: 20px 10px;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+
+  .video-ratio iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .video-container h2 {
+    font-size: 1.5rem;
+    padding-right: 30px;
+  }
 }
-
-nav a {
-  color: var(--light); /* antes era branco */
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 20px;
-
-}
-
-.hero {
-  /* margin-top: 100px; */
-  height: calc(100vh - 100px);
-  background: url('../images/construção.png') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.header-funcao{
-  margin-right: 30px;
-}
-
-.logo img {
-  height: 280px !important;
-  width: auto;
-  object-fit: contain;
-}
-
-}
-
 
 @media (max-width: 770px) {
   .header {
@@ -335,5 +351,3 @@ nav a {
     text-align: center;
   }
 }
-
-
