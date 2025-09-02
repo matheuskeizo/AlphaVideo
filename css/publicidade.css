@@ -1,0 +1,343 @@
+:root {
+  --primary: #006bc2;
+  --dark: #0f0f0f;
+  --light: #ffffff;
+  --gray: #f5f5f5;
+  --font: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background-color: var(--light);
+  color: #333;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 280px;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.header {
+  padding: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 100px;
+  display: flex;
+  background-color: #000000;
+  overflow: visible;
+}
+
+.container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav a {
+  margin-left: 30px;
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+nav a:hover {
+  color: var(--primary);
+  transition: 0.9s;
+}
+
+.hero {
+  height: calc(100vh - 280px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url('../images/publicidade.webp') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: var(--light);
+  max-width: 900px;
+  padding: 40px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #4043e2;
+}
+
+.services {
+  background-color: var(--gray);
+  padding: 30px 0
+}
+
+.container-body {
+  max-width: auto;
+  margin: 0 auto;
+
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px;
+  background-color: var(--light);
+  padding: 30px;
+  padding-top: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card li {
+  margin-bottom: 10px;
+}
+
+.additional-section {
+  background-color: var(--light);
+  padding: 80px 0;
+}
+
+.additional-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--primary);
+  font-size: 2.5rem;
+}
+
+.additional-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.additional-card {
+  background-color: var(--gray);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.additional-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.additional-card h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.additional-card p {
+  line-height: 1.6;
+}
+
+.video-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+.container-body h2 {
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+.video-container h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.video-ratio {
+  max-width: 800px;
+  margin: 50px 100px 100px 100px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-ratio iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 30px 0;
+}
+
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .grid {
+    gap: 30px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .video-container h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 180px;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .additional-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  nav a {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .hero {
+    height: calc(100vh - 200px);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+      url('https://placehold.co/800x600') no-repeat center center/cover;
+  }
+
+  .logo img {
+    height: 180px;
+  }
+}
