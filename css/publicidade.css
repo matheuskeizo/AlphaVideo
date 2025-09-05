@@ -319,10 +319,13 @@ nav a:hover {
 
 @media (max-width: 480px) {
   .header {
-    height: 200px;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
+  }
+
+  .header-funcao{
+    margin-right: 60px;
   }
 
   nav a {
@@ -334,7 +337,7 @@ nav a:hover {
   .hero {
     height: calc(100vh - 200px);
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-      url('https://placehold.co/800x600') no-repeat center center/cover;
+
   }
 
   .logo img {
