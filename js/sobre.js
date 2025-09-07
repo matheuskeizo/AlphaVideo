@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     servicos: `
       <h1>Serviços</h1>
       <ul>
-        <li><strong>Institucional:</strong> casamentos, shows, festas, feirasm confraternizações e aberturas</li>
+        <li><strong>Institucional:</strong> casamentos, shows, festas, feiras confraternizações e aberturas</li>
         <li><strong>Imóveis:</strong> captação de imóveis com imagens aéreas incríveis</li>
         <li><strong>Construções:</strong> acompanhamento e cobertura com alta precisão</li>
         <li><strong>Publicidade:</strong> Gravações e takes aereos para teaser e redes sociais </li>
