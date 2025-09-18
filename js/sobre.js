@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
     servicos: `
       <h1>Serviços</h1>
       <ul>
-        <li><strong>Institucional:</strong> casamentos, shows, festas, feiras confraternizações e aberturas</li>
-        <li><strong>Imóveis:</strong> captação de imóveis com imagens aéreas incríveis</li>
-        <li><strong>Construções:</strong> acompanhamento e cobertura com alta precisão</li>
-        <li><strong>Publicidade:</strong> Gravações e takes aereos para teaser e redes sociais </li>
+        <li><strong>Institucional:</strong> Comércios, Instituições, escritórios, Startups, franquias</li>
+        <li><strong>Imóveis:</strong> Captação de imóveis com imagens aéreas incríveis</li>
+        <li><strong>Construções:</strong> Acompanhamento e cobertura com alta precisão</li>
+        <li><strong>Publicidade:</strong> Gravações e takes para teaser e redes sociais </li>
       </ul>
     `
   };
